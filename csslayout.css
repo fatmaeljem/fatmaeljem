@@ -1,0 +1,442 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #747474;
+  }
+  
+  /*header */
+  .main-navbar {
+    display: flex;
+    justify-content: space-around;
+    overflow: auto;
+    position: fixed;
+    top:-2%;
+    z-index:-3;
+    width: 100%;
+    background: hsla(0, 0%, 100%, .98);
+  
+  }
+  
+  nav {
+    width:20px;
+  display: flex;
+  justify-content: space-around;
+    margin-right: 15%;
+    margin-top: -3px;
+    margin: 20px 100px;
+    color: #747474;
+  font-size:20px;
+  
+  }
+  
+  a:link {
+  
+    color: #00b39b;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  
+  .logo-docplanner {
+    width: 268px;
+    height: 33px;
+    margin: 20px 10px;
+  }
+  
+  
+  
+  /*main*/
+  ul ul {
+    list-style-type: circle;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  .dropdown{
+    list-style: none;
+  
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+  .dropdown-content li {
+    color: grey;
+  }
+  a {
+    text-decoration: none;
+    color: grey;
+  }
+  
+  
+  /*section-1*/
+  
+  .section-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo-section-1 {
+    width: 40px;
+    height: 40px;
+  
+  }
+  .flex-container {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    margin-top: 70px;
+    justify-content: space-around;
+  }
+  .p1{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 28px;
+    color: rgb(116, 116, 116);
+  }
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .section-2 {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    height: 350px;
+    margin-left: 130px;
+    margin-right: 50px;
+  }
+  .patients {
+    background-color: #1ad1b9;
+    width: 30%;
+    border-radius: 10px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .titre {
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 33.8px;
+    color: rgb(255, 255, 255);
+  }
+  .description {
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28.8px;
+    color: rgb(255, 255, 255);
+  }
+  label {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 19.2px;
+    font-weight: 400;
+    line-height: 24.96px;
+    color: rgb(255, 255, 255);
+  }
+  label {
+    cursor: default;
+  }
+  select {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 19.2px;
+    font-weight: 300;
+    line-height: 24.96px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border-color: transparent;
+  
+  }
+  select:not(:-internal-list-box) {
+    overflow: visible;
+  }
+  select {
+    -webkit-writing-mode: horizontal-tb ;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: default;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+  }
+  option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+  }
+  .doctors {
+    background-color: #5190e2;
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .clinics {
+    background-color: #323d49;
+    width: 30%;
+    border-radius: 10px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  
+  }
+  .section-3 {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin-left: 130px;
+    margin-right: 50px;
+  }
+  .global {
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 33.8px;
+    color: rgb(0, 179, 155);
+    width: 30%;
+    text-align: center;
+  }
+  div {
+    display: block;
+  }
+  .list2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  li {
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+  }
+  li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+  a {
+    text-decoration: none;
+    color: grey;
+  }
+  li {
+    list-style: none;
+  }
+  li {
+    text-align: -webkit-match-parent;
+  }
+  .stats-container {
+    background: linear-gradient(
+  80deg
+  ,white,rgb(0,204,177));
+    display: flex;
+    height: 380px;
+    padding: 4%;
+    overflow: hidden;
+  }
+  .introduction-box {
+    width: 30%;
+  }
+  .introduction-box h1 {
+    color: rgb(0,177,159);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 7%;
+  }
+  h1 {
+    margin: 1em 0;
+    font-family: Work Sans, Arial, sans-serif;
+    font-weight: 200;
+    font-size: xx-large;
+    color: #00b39b;
+    text-align: center;
+  }
+  h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  .introduction-logo img {
+    height: 231px;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .stats {
+    text-align: center;
+    width: 60%;
+    margin: 0 4% 0 19%;
+  }
+  .stats-box-colomn-1 {
+    display: flex;
+  }
+  .stats-box {
+    height: 190px;
+    background-color: white;
+    border-radius: 9%;
+    width: 50%;
+    margin-right: 7%;
+  }
+  .stats h1 {
+    color: rgb(0,197,155);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .stats-box-colomn-2 {
+    display: flex;
+    margin-top: 2%;
+  }
+  .box-3 p {
+    margin-right: 20%;
+    margin-top: -5%;
+  }
+  .offices-description {
+    text-align: center;
+  }
+  .offices-description h1 {
+    color: rgb(0,197,155);
+  
+  }
+  .offices-colomn-1 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .opening-information {
+    text-align: right;
+    margin-top: -17%;
+  }
+  .opening-information input {
+    background-color: rgb(61,131,223);
+    color: white;
+    height: 31px;
+    border-radius: 25px;
+  }
+  input[type="button" i] {
+    appearance: auto;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: -internal-light-dark(black, white);
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+  }
+  input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+  }
+  .offices-colomn-2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+  }
+  
+  /*footer*/
+  
+  footer {
+    height: 75px;
+    width: 100%;
+    border-top: 1px solid grey;
+    font-size: .75em;
+    color: #ababab;
+    text-align: center;
+    line-height: 2.2;
+  }
+  .offices-box h2 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  
+  
+  footer a {
+    color: #3d83df;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
