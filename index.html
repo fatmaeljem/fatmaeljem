@@ -1,341 +1,117 @@
 <!DOCTYPE html>
-<html lang="en" region="en">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Docplanner Group</title>
-  <!--icon link-->
-  <link rel="apple-touch-icon" sizes="180x180" href="https://www.docplanner.com/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="https://www.docplanner.com/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="https://www.docplanner.com/favicon/favicon-16x16.png" />
-  <link rel="dns-prefetch" href="//fonts.gstatic.com" />
-  <meta name="robots" content="index,follow">
-  <link rel="stylesheet" href="./style.css" />
-  <!--font google-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,700&display=swap" rel="stylesheet">
 
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+    <script src="style.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+    </script>
+    
 </head>
 
 <body>
-
-  <header>
-
-    <nav class="main-navbar">
-      <div>
-        <img class="logo-docplanner" src="https://www.docplanner.com/img/logo-default-group-en.svg?v=1"
-          alt="Docplanner Group" />
-      </div>
-
-      <div class="nav">
-
-        <a href="./about-us"> about us</a>
-
-        <a href="./career"> career </a>
-
-        <a href="./ Departments"> Departments </a>
-
-
-      </div>
-
+    <!-- Nav -->
+    <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span
+                        class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear
+                    Cart</button></div>
+        </div>
     </nav>
 
-  </header>
+
+    <!-- Main -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                
+        
 
 
-  <main>
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="1621323909_M1296ZRIW_M928_E01_ZHC.jpg" alt="Card image cap">
+                    <div class="card-block">
 
-    <div class="section-1">
+                        
 
-      <div class="logo-section-1">
-        <img src="https://www.docplanner.com/img/sygnet.png">
-      </div>
-
-      <div>
-        <h1>Making the healthcare experience more human</h1>
-      </div>
-
-
-    </div>
-
-    <div class="flex-container">
-
-      <p class="p1">We want patients to find the perfect doctor and book an
-        appointment in the most easy way. The
-        patient journey should be
-        enjoyable, and that's why we are always next to them: to help them
-        find the
-        best possible care. Anytime, anywhere.
-      </p>
-
-      <p class="p1">We also help doctors to better manage their practice and build their
-        online reputation. With
-        our integrated end-to-end solution, doctors
-        are able not only to improve their online presence, but also to
-
-        devote their time to what really matters: their patients.
-      </p>
-    </div>
-
-    <section2 class="section-2">
-
-      <div class="patients">
-        <p class="titre">For patients</p>
-        <p class="description">Find a doctor, book a <br> visit and solve any <br> health-related doubt</p>
-        <label for="country"></label>
-        <select name="country" id="choose country" style="background-color: #ffffff;">
-          <option value="choose">choose country</option>
-          <option value="Argentina">Argentina</option>
-          <option value="Brazil">Brazil</option>
-          <option value="Chile">Chile</option>
-          <option value="Colombia">Colombia</option>
-          <option value="Czech">Czech</option>
-          <option value="Italy">Italy</option>
-          <option value="Mexico">Mexico</option>
-          <option value="Peru">Peru</option>
-          <option value="Poland">Poland</option>
-          <option value="Portugal">Portugal</option>
-          <option value="Spain">Spain</option>
-          <option value="Turkey">Turkey</option>
-        </select>
-      </div>
-
-
-      <div class="doctors">
-        <p class="titre">For Doctors</p>
-        <p class="description">Save time managing <br> visits and cut no- <br> shows by half</p>
-        <label for="country"></label>
-        <select name="country" id="choose country" style="background-color: #5190e2;">
-          <option value="choose">choose country</option>
-          <option value="Argentina">Argentina</option>
-          <option value="Brazil">Brazil</option>
-          <option value="Chile">Chile</option>
-          <option value="Colombia">Colombia</option>
-          <option value="Czech">Czech</option>
-          <option value="Italy">Italy</option>
-          <option value="Mexico">Mexico</option>
-          <option value="Peru">Peru</option>
-          <option value="Poland">Poland</option>
-          <option value="Portugal">Portugal</option>
-          <option value="Spain">Spain</option>
-          <option value="Turkey">Turkey</option>
-        </select>
-      </div>
-
-
-      <div class="clinics">
-        <p class="titre">For clinics</p>
-        <p class="description">Deliver an exceptional <br> patient experience in <br> your clinic</p>
-        <label for="Specialists"></label>
-        <select name="country" id="2 to 20 specialists" style="background-color: #323d49;">
-          <option value="choose">2 to 20 specialists</option>
-          <option value="Brazil">Brazil</option>
-          <option value="Czech">Czech</option>
-          <option value="Italy">Italy</option>
-          <option value="Mexico">Mexico</option>
-          <option value="Poland">Poland</option>
-          <option value="Spain">Spain</option>
-          <option value="Turkey">Turkey</option>
-        </select>
-
-        <label for="Specialists"></label>
-        <select name="country" id="More than 20 specialists" style="background-color: #323d49;">
-          <option value="choose">More than 20 specialists</option>
-          <option value="Brazil">Brazil</option>
-          <option value="Italy">Italy</option>
-          <option value="Mexico">Mexico</option>
-          <option value="Poland">Poland</option>
-          <option value="Spain">Spain</option>
-        </select>
-      </div>
-
-    </section2>
-
-
-    <section3>
-
-      <section3 class="section-3">
-        <div class="global">
-          <p>
-            We are a global <br> compagny <br> with local culture
-          </p>
+                        <h4 class="card-title">sac Book Tote </h4>
+                        <h4 class="card-title">marque:DIOR </h4>
+                        <p class="card-text">Price:0.5 €</p>
+                        <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Add to
+                            cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="1621323909_M1296ZRIW_M928_E01_.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">DIOR ADDICT</h4>
+                        <h4 class="card-title">marque:DIOR </h4>
+                        <p class="card-text">Price:1.22€</p>
+                        <a href="#" data-name="Banana" data-price="1.22" class="add-to-cart btn btn-primary">Add to
+                            cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="1621323909_M1296ZRIW_M928_.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Slide Sandals</h4>
+                        <h4 class="card-title">marque:DIOR </h4>
+                        <p class="card-text">Price: $5</p>
+                        <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <ul class="list2">
-
-          <li><a
-              href="https://www.znanylekarz.pl/?__hstc=94104962.3d9258ab550d15dc2d426f13895e90de.1606918202338.1607074654613.1607074865030.9&amp;__hssc=94104962.2.1607074865030&amp;__hsfp=2186996835"><img
-                src="https://www.docplanner.com/img/sygnet.png">ZnanyLekarz</a></li>
-          <li><a
-              href="https://www.doctoralia.es/?__hstc=94104962.3d9258ab550d15dc2d426f13895e90de.1606918202338.1607074654613.1607074865030.9&amp;__hssc=94104962.2.1607074865030&amp;__hsfp=2186996835"><img
-                src="https://www.docplanner.com/img/sygnet.png">Doctoralia</a></li>
-          <li><a
-              href="https://www.miodottore.it/?__hstc=94104962.3d9258ab550d15dc2d426f13895e90de.1606918202338.1607074654613.1607074865030.9&amp;__hssc=94104962.2.1607074865030&amp;__hsfp=2186996835"><img
-                src="https://www.docplanner.com/img/sygnet.png">MioDottore</a></li>
-          <li><a
-              href="https://www.doktortakvimi.com/?__hstc=94104962.3d9258ab550d15dc2d426f13895e90de.1606918202338.1607074865030.1607078740499.10&amp;__hssc=94104962.1.1607078740499&amp;__hsfp=2186996835"><img
-                src="https://www.docplanner.com/img/sygnet.png">DoktorTakvimi</a></li>
-          <li><a
-              href="https://www.znamylekar.cz/?__hstc=94104962.3d9258ab550d15dc2d426f13895e90de.1606918202338.1607074865030.1607078740499.10&amp;__hssc=94104962.1.1607078740499&amp;__hsfp=2186996835"><img
-                src="https://www.docplanner.com/img/sygnet.png">ZnamyLekar</a></li>
-          <li><a
-              href="https://www.tuotempo.com/?__hstc=94104962.3d9258ab550d15dc2d426f13895e90de.1606918202338.1607074865030.1607078740499.10&amp;__hssc=94104962.1.1607078740499&amp;__hsfp=2186996835"><img
-                src="https://www.docplanner.com/logos/logo-tuotempo.svg" class="imaage"></a></li>
-          <li><a
-              href="https://www.gipo.it/?__hstc=94104962.3d9258ab550d15dc2d426f13895e90de.1606918202338.1607074865030.1607078740499.10&amp;__hssc=94104962.1.1607078740499&amp;__hsfp=2186996835"><img
-                src="https://www.docplanner.com/logos/logo-gipo.svg"></a></li>
-          <li><a href="https://clinic-cloud.com/"><img src="https://www.docplanner.com/img/sygnet.png"><img
-                src="https://www.docplanner.com/logos/logo-clinicloud.svg"></a></li>
-
-        </ul>
-      </section3>
-
-      <section4>
-        <section4 class="stats-container">
-          <div class="introduction-box">
-            <h1>The world's <br>
-              biggest healthcare platform</h1>
-            <p>
-              We work from 6 offices all over the world, bringing Docplanner <br>
-              Group to life in almost 20 countries.
-            </p>
-            <div class="introduction-logo">
-              <img src="https://www.docplanner.com/img/sygnet.png">
-            </div>
-          </div>
-          <div class="stats">
-            <div class="stats-box-colomn-1">
-              <div class="stats-box box-1">
-                <div class="stats-box-logo">
-                  <img src="https://www.docplanner.com/img/flag.png">
-                </div>
-                <h1>Leader in 8 countries</h1>
-                <p>Poland, Turkey, Spain, Italy, Mexico, Brazil, Argentina and Chile</p>
-              </div>
-              <div class="stats-box box-2">
-                <div class="stats-box-logo">
-                  <img src="https://www.docplanner.com/img/visits.png">
-                </div>
-                <h1>600 000 appointments</h1>
-                <p>booked last month</p>
-              </div>
-            </div>
-            <div class="stats-box-colomn-2">
-              <div class="stats-box box-3">
-                <div class="stats-box-logo">
-                  <img src="https://www.docplanner.com/img/patients.png">
-                </div>
-                <h1>20 million unique patients</h1>
-                <p>visit us every month</p>
-              </div>
-              <div class="stats-box box-4">
-                <div class="stats-box-logo">
-                  <img src="https://www.docplanner.com/img/doctors.png">
-                </div>
-                <h1>35 000 active doctors</h1>
-                <p>trust in our solutions</p>
-              </div>
-            </div>
-          </div>
-        </section4>
-        <section5>
-          <section5 class="offices">
-            <div class="offices-description">
-              <h1>Improve the lives of millions.<br>
-                Change yours forever
-              </h1>
-              <p>
-                More than 500 team mates share our same vision, goals and passion .<br>
-                With offices in Warsaw, Barcelona, Istanbul, Rome, Mexico City and<br>
-                Curitiba, our search for great talent never stops.
-              </p>
-            </div>
-            <div class="offices-worldwide">
-              <div class="offices-colomn-1">
-                <div class="offices-box">
-                  <div class="offices-box-image">
-                    <img src="https://www.docplanner.com/images/warsaw.png">
-                  </div>
-                  <h2>Warsaw</h2>
-                  <div class="opening-information">
-                    <input type="button" value="see openings">
-                  </div>
-                </div>
-                <div class="offices-box">
-                  <div class="offices-box-image">
-                    <img src="https://www.docplanner.com/images/barcelona.png">
-                  </div>
-                  <h2>Barcelona</h2>
-                  <div class="opening-information">
-                    <input type="button" value="see openings">
-                  </div>
-                </div>
-                <div class="offices-box">
-                  <div class="offices-box-image">
-                    <img src="https://www.docplanner.com/images/istanbul.png">
-                  </div>
-                  <h2>Istanbul</h2>
-                  <div class="opening-information">
-                    <input type="button" value="see openings">
-                  </div>
-                </div>
-              </div>
-              <div class="offices-colomn-2">
-                <div class="offices-box">
-                  <div class="offices-box-image">
-                    <img src="https://www.docplanner.com/images/rome.png">
-                  </div>
-                  <h2>Rome</h2>
-                  <div class="opening-information">
-                    <input type="button" value="see openings">
-                  </div>
-                </div>
-                <div class="offices-box">
-                  <div class="offices-box-image">
-                    <img src="https://www.docplanner.com/images/mexico-city.png">
-                  </div>
-                  <h2>Mexico city</h2>
-                  <div class="opening-information">
-                    <input type="button" value="see openings">
-                  </div>
-                </div>
-                <div class="offices-box">
-                  <div class="offices-box-image">
-                    <img src="https://www.docplanner.com/images/curitiba.png">
-                  </div>
-                  <h2>Curitiba</h2>
-                  <div class="opening-information">
-                    <input type="button" value="see openings"> </div>
-                </div>
-              </div>
-            </div>
-          </section5>
-        </section5>
-      </section4>
-    </section3>
-
-
-
-  </main>
-
-
-  <footer>
-    <div>
-      <span>We are leaders in 10 countries:</span>
-      <span> <a href="#">Poland</a> , <a href="#">Turkey </a>, <a href="#">Spain</a>, <a href="#">Italy</a>, <a
-          href="#">Czech Republic</a>, <a href="#">Mexico</a>,
-        <a href="#">Colombia</a>, <a href="#">Brazil</a>, <a href="#">Argentina</a> and <a href="#">Chile</a>
-      </span>
     </div>
-    <div>This site uses cookies to deliver services in accordance with this Privacy Policy. You
-      can specify the conditions for storing or accessing cookies on your browser.
-    </div>
-    <div>www.docplanner.com © 2019</div>
-  </footer>
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: <span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                   
+
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="style.js"></script>
 
 
 </body>

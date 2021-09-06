@@ -1,0 +1,44 @@
+body {
+    padding-top: 80px;
+   
+  }
+  
+  .show-cart li {
+    display: flex;
+  }
+  .card {
+      background-color:black;
+    margin-bottom: 20px;
+  }
+  .card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+  .like-btn {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    display: inline-block;
+    background: url(twitter-heart.png);
+    width: 60px;
+    height: 60px;
+    background-size: 2900%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.buttons {
+  display: block;
+
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+.delete-btn {
+  display: inline-block;
+  cursor: pointer;
+  width: 18px;
+  height: 17px;
+  background: url(delete-icn.svg) no-repeat center;
+  margin-right: 20px;
+}
